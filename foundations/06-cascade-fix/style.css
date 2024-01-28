@@ -17,6 +17,20 @@ body {
   font-weight: 800;
 }
 
+/* 
+Could have done this after .para, .small-para selectors
+using chaining selector specificity only:
+
+.para.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.para {
+  font-size: 22px;
+}
+*/
+
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -28,6 +42,16 @@ body {
   color: white;
   font-weight: bold;
 } 
+
+/* 
+Could have added this block above .button due to 
+chaining selector specificity:
+.button.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+*/
 
 .text.child {
   color: rgb(0, 0, 0);
